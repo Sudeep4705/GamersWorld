@@ -1,0 +1,34 @@
+<% layout('layouts/boilerplate') %>
+
+<% if (searchdata) { %>
+  <div class="row mt-3 head">
+    <div class="col-8 offset-3 ">
+      <h2 class="Name">
+        <%= searchdata.Name %>
+      </h2>
+    </div>
+    <div class="card col-6 offset-3">
+      <img src="<%= searchdata.image.url %>" class="card-img-top show-img" alt="...">
+      <div class="card-body">
+       
+
+        <p class="card-text">
+          Description: <%= searchdata.description %>
+        </p>
+        <p class="card-text">
+          GameName: <%= searchdata.gamename %>
+        </p>
+        <p class="card-text">
+          Location: <%= searchdata.location %>
+        </p>
+        <p class="card-text">NetWorth: &#8377;<%= searchdata.networth %></p>
+      </div>
+    </div>
+  </div>
+<% } else { %>
+  <div class="row mt-3">
+    <div class="col-8 offset-3">
+      <h2>No results found for your search.</h2>
+    </div>
+  </div>
+<% } %>

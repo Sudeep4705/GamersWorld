@@ -1,0 +1,57 @@
+<% layout('layouts/boilerplate') %>
+    <div class="row  head">
+        <div class="col-8 offset-2">
+            <br> <br>
+            <h3>New Player</h3>
+            <br>
+            <form action="/listings" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" placeholder="enter the name of the player" name="listing[Name]"
+                        class="form-control" required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">Name should be valid</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" id="description" class="form-control" required></textarea>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">Description should be valid</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image</label>
+                    <input type="file" placeholder="Image" name="listing[image]" class="form-control" required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">Image should be valid</div>
+                </div>
+
+                <div>
+                    <label for="gamename" class="form-label">GameName</label>
+                    <input type="text" placeholder="enter the gamename" name="listing[gamename]" class="form-control"
+                        required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">GameName should be valid</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" placeholder="enter the location" name="listing[location]" class="form-control"
+                        required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">Location should be valid</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="networth" class="form-label">NetWorth</label>
+                    <input type="number" placeholder="NetWorth" name="listing[networth]" class="form-control" required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">NetWorth should be valid</div>
+                </div>
+                <br>
+                <button class=" btn btn-dark add-btn">Add</button>
+                <br> <br> <br> <br> <br>
+            </form>
+        </div>
+    </div>

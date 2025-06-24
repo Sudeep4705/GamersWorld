@@ -1,0 +1,55 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="row mt-3 edit head">
+        <div class="col-8 offset-2">
+            <h3>Edit Your Player</h3>
+            <br>
+            <form action="/listings/<%= listing.id %>?_method=PUT" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" value="<%= listing.Name %>" name="listing[Name]" class="form-control" required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">Name should be valid</div>
+                </div>
+                <div class="mb-3"> <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" id="description" class="form-control"
+                        required><%= listing.description %></textarea>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">Description should be valid</div>
+                </div>
+                <div class="mb-3" >
+          <h2>Image Preview</h2>
+          <img src="<%= listing.image.url %>" alt="img" class="imagePreview">
+        </div>
+                <div class="mb-3"><label for="image" class="form-label">Image</label>
+                    <input type="file"  name="listing[image]" class="form-control" required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">Image should be valid</div>
+                </div>
+                <div class="mb-3"><label for="gamename" class="form-label">GameName</label>
+                    <input type="text" value="<%= listing.gamename %>" name="listing[gamename]" class="form-control"
+                        required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">GameName should be valid</div>
+                </div>
+                <div class="mb-3"><label for="location" class="form-label">Location</label>
+                    <input type="text" value="<%= listing.location %>" name="listing[location]" class="form-control"
+                        required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">Location should be valid</div>
+                </div>
+                <div class="mb-3"><label for="networth" class="form-label">NetWorth</label>
+                    <input type="number" value="<%= listing.networth %>" name="listing[networth]" class="form-control"
+                        required>
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback">NetWorth should be valid</div>
+                </div>
+                 <button class="btn btn-dark edit-btn">Update</button>
+                 <br> <br> <br> <br>
+                  
+        </div>
+       
+    </div>
+    
+
+    </form>

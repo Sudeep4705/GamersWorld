@@ -1,0 +1,228 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   /* Lightest blue tint */
+     background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('images/background.jpg');
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    
+}
+   
+.container{
+flex: 1;
+
+}
+
+/* navbar */
+.navbar{    
+       height: 5rem; 
+       /* background: #0a001a; /* Dark background */
+  color: #e0e0ff; 
+    background: linear-gradient(90deg, #3f0d7e, #0d0d5e);
+      z-index: 1000;
+  box-shadow: 0 0 10px #ff00ff;
+     
+       
+  /* background-color: transparent !important; */
+
+
+
+}   
+
+.fa-gamepad{
+    color:#decbcb;
+    font-size: 2rem;
+}
+.nav-link{
+    /* color: #222222 !important;  */
+    
+    color: #ffffff !important  
+}
+.d-flex{
+  margin-left: 1rem;
+}
+/* footer */
+footer{
+      background: rgba(63, 13, 126, 0.8); /* Semi-transparent neon purple */
+  backdrop-filter: blur(8px);
+    box-shadow: 0 -2px 10px #ff00ff50;
+    
+}
+
+
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items:space-evenly;
+    
+color: #f4faff; 
+}   
+.f-info-links,.f-info-socials,.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info-links a{
+text-decoration: none;
+color: white;
+}
+.f-info-links a:hover{
+text-decoration: underline;
+}
+
+/* cards */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;        
+  background-color: #ffffff !important;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+   
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+   width: 100% !important;
+    height: 20rem !important;
+    object-fit: cover !important;
+    object-position: top !important;
+}
+
+
+
+
+
+.card-body {
+    padding: 1rem;
+    color: #333;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0a3d62;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-weight: 400 !important;
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+
+.listing-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.listing-link:hover {
+    color: #0a3d62;
+}
+
+
+/* card effect */
+.card-img-overlay{
+        opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}   
+
+/* btn */
+.add-btn{
+    background-color: #fe424d !important;
+    border:none !important;
+}
+.edit-btn{
+    border: none !important;
+}
+
+/* show image */
+.show-img{
+   width: 100%;
+    height: 35rem !important; /* reduce to show even less */
+    object-fit: cover;
+    object-position: top;
+    margin-top: 0.5rem !important;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* buttons */
+
+.btns{
+    display: flex;
+    margin-left: 18rem;
+    border: none;
+}
+
+.Name{
+    text-transform: uppercase !important;
+}
+
+.btn1{
+    background-color: #1c2541 !important;
+}
+
+.cards{
+    background-color: rgb(242, 214, 178) !important;
+}
+
+.new ,.edit{
+    background-color: #b5d8eb !important;
+}
+
+.star{
+    font-size: 1rem !important;
+}
+.imagePreview{
+    width: 300px !important;
+    height: 200px !important;
+    
+}
+
+/* map */
+#map {
+    height: 400px;
+    width: 80vh;
+    border: 2px solid black;
+}
+
+
+
+ .head{
+    color: rgb(212, 218, 223);
+ }
+
+ .login,.signup{
+    color: #fe424d !important;
+ }
+
